@@ -18,26 +18,19 @@ console.log(sumAll(2)); // 3
 console.log(sumAll(4)); // 10
 
 
-/* 3. A function which takes str and time in seconds as arguments, then every second 
-it should count down from time to 0 and print current time to console when time equals to 0 it prints str*/
-function bombTimer(str, time)
-{
-  /* your code */ 
-}
-bombTimer('Boooom', 3);
-3
-2
-1
-Boooom
-
-
 // 4. A function which returns factorial of number using recursion.
 function factorial(n)
 { 
-  /* your code */ 
+ if (n == 0) { return 1; }
+  else {
+    if (n != 1) {
+      return n*factorial(n-1);
+    }
+    else return n; 
+  }
 }
-factorial(3); // 6
-factorial(5); // 120
+console.log(factorial(3)); // 6
+console.log(factorial(5)); // 120
 
 
 //5. Implement function from task №3 (bombTimer) using recursion and setTimeout.
