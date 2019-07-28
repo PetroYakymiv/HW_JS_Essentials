@@ -55,13 +55,12 @@ console.log(factorial(3)); // 6
 console.log(factorial(5)); // 120
 
 
-//5. Implement function from task №3 (bombTimer) using recursion and setTimeout.
-
-
 // 6. A function which takes an array of numbers and maxNumber, the function returns new array with numbers not higher than maxNumber.
 function filterNumbers(arr, maxNumber) 
 { 
-  /* your code */ 
+ return arr.filter(function (item) {
+      return item <= maxNumber;
+    });     
 }
 filterNumbers([1, 4, 8, 1, 20], 5) // [1, 4, 1]
 
