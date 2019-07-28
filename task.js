@@ -9,10 +9,13 @@ printTimeout('hello', 10) // hello will appear after 10secs in console
 //2. A function which returns sum of all numbers from 1 to n using recursion.
 function sumAll(n) 
 { 
-  /* your code */ 
+ if (n != 1) {
+        return n + sumAll(n - 1);
+    }
+    else return n;
 }
-sumAll(2); // 3
-sumAll(4); // 10
+console.log(sumAll(2)); // 3
+console.log(sumAll(4)); // 10
 
 
 /* 3. A function which takes str and time in seconds as arguments, then every second 
