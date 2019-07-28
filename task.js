@@ -1,7 +1,7 @@
 //1. A function which prints str after n seconds.
 function printTimeout(str, n) 
 { 
-  /* your code */ 
+  setTimeout(() => console.log(str) , n * 1000);
 }
 printTimeout('hello', 10) // hello will appear after 10secs in console
 
