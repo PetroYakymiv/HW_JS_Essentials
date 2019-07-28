@@ -16,7 +16,7 @@ console.log(sumAll(2)); // 3
 console.log(sumAll(4)); // 10
 
 
-/* 3. A function which takes str and time in seconds as arguments, then every second
+/*3. A function which takes str and time in seconds as arguments, then every second
 it should count down from time to 0 and print current time to console when time equals to 0 it prints str*/
 function bombTimer(str, time) {
     if (time == 0) {
@@ -37,7 +37,7 @@ function bombTimer(str, time) {
 bombTimer('Boooom', 3);
 
 
-// 4. A function which returns factorial of number using recursion.
+//4. A function which returns factorial of number using recursion.
 function factorial(n){ 
  if (n == 0) { return 1; }
   else {
@@ -51,7 +51,7 @@ console.log(factorial(3)); // 6
 console.log(factorial(5)); // 120
 
 
-// 6. A function which takes an array of numbers and maxNumber, the function returns new array with numbers not higher than maxNumber.
+//6. A function which takes an array of numbers and maxNumber, the function returns new array with numbers not higher than maxNumber.
 function filterNumbers(arr, maxNumber) { 
  return arr.filter(function (item) {
       return item <= maxNumber;
