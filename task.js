@@ -22,13 +22,13 @@ function bombTimer(str, time) {
     if (time == 0) {
         console.log(str);
     } else {
-        setInterval(function () {
+        let intervalId =setInterval(function () {
             if (time >= 1) {
                 console.log(time--);
             };
         }, 1000);
         setTimeout(function () {
-            clearInterval();
+            clearInterval(intervalId);
             console.log(str);
         }, (time + 1) * 1000);
     }
