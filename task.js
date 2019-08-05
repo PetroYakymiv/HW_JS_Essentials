@@ -22,7 +22,7 @@ function bombTimer(str, time) {
     if (time == 0) {
         console.log(str);
     } else {
-        let intervalId =setInterval(function () {
+        let intervalId = setInterval(function () {
             if (time >= 1) {
                 console.log(time--);
             };
